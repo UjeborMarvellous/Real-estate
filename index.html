@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Investment</title>
+    <style>
+        /* .wind {
+                /* /* width: 100%;
+                float: left; */
+            /* } */
+            /* @media (min-width: 500px) {
+                .wind {
+                   max-width: 500px; */
+                /* } */
+            /* } */ 
+            /* #faith{ */
+                /* background: rgb(115,125,152); */
+                /* top: 2.875rem;
+                left: 47rem;
+                height: 1.8125rem;
+                width: 15.75rem;
+                z-index: 61; */
+                /* color: #37465A; */
+                /* font-size: 1.1146rem; */
+                /* line-height: 1.8rem; */
+                /* text-align: center; */
+            /* } */
+            #element {
+                margin-left: 1000px;
+             }
+            .date{
+                left: 45rem;
+                height: 12rem;
+            }
+            #rate {
+                position: absolute;
+            }
+            .slide {
+                text-align: center;
+                margin-bottom: 200px;
+                position: absolute;
+                left: 500px;
+                top: 200px;
+                color: rgb(0, 0, 0);
+            }
+            input[type=text] {
+                border: none;
+            }
+            select{
+                width: 60%;
+                height: 30px;
+                border-radius: 10px;
+            }
+             .form-input{
+                width: 60%;
+                height: 30px;
+                border-radius: 10px;
+            }
+            button {
+                margin-top: 100px;
+                width: 60%;
+                height: 30px;
+                border-radius: 10px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+            a {
+                text-decoration: none;
+            }
+            .block{
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div id="rate">
+        <div class="wind" id="element">
+            <h2 id="faith">REGISTER YOUR INTEREST</h2>
+            <h4>All document is needed fill all (compulsory)</h4>
+            <div class="date">
+                <select 
+                    id="files" name="Title" title="Title" required>
+                    <option class="hidden" value="" disabled="" selected="">Title</option>
+                    <option class="option" value="MR.">MR.</option>
+                    <option class="option" value="MS.">MS.</option>
+                    <option class="option" value="MRS.">MRS.</option>
+                </select>
+                <form>
+                    <p>
+                        Email:
+                        <p>
+                            <input type="text" placeholder="Email" required class="form-input">
+                        </p>
+                    </p>
+                    <p>
+                        First Name:
+                        <p>
+                            <input type="text" placeholder="first name" required class="form-input">
+                        </p>
+                        <p>
+                        Last Name:
+                        <p>
+                            <input type="text" placeholder="last name" required class="form-input">
+                        </p>
+                    </p>
+                    </p>
+                </form>    
+            </div>
+            <button class="block" data-at="form-button"> ENQUIRE NOW </button>
+        </div>
+    </div>
+    <div class="slide">
+        <h1>Real Estate Investment</h1>
+        <a href="#"><h2>We Build Houses To Your Taste</h2></a>
+    </div>
+        <img src="images/dead1.jpg" alt="loading..." width="100%" height="610px" id="pix">
+
+        <script>
+            var position=1;
+            function slide() {
+                ++position;
+   
+                document.getElementById("pix").src="images/slide"+position+".jpg";
+   
+                if (position == 5) {
+                    position = 0
+                }
+            }
+   
+            setInterval(slide,7000);
+        </script>
+</body>
+</html>
